@@ -1,0 +1,148 @@
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    margin: 0;
+    background-color: #eaf2ff;
+    font: normal normal 105%/1.7 sans-serif;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: white;
+    margin: 0 auto;
+    max-width: 980px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1;
+    margin: 20px auto;
+    width: 100%;
+
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Nav bar */
+
+nav ul {
+    font-size: larger;
+    text-shadow: rgba(0, 0, 0, 0.75) 0 1px 1px;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.right {
+    float: right !important;
+}
+
+
+/* Footer */
+
+footer {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Game list */
+
+#games {
+    width: 940px;
+    margin: 0 20px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 306.66px 306.66px 306.66px;
+
+    display: -ms-grid;
+    -ms-grid-columns: 33% 33% auto;
+}
+
+#games div img {
+    border: 1px solid #424242;
+    float: left;
+    margin-right: 6px;
+    height: 60px;
+    width: 60px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path fill="#db3f3a" d="M0 0h100v100H0z"/><g fill="#FFF"><rect x="8.15" y="47.15" width="35" height="11.7" ry="1.5"/><rect x="19.8" y="35.5" width="11.7" height="35" ry="1.5"/><circle cx="65" cy="56" r="7.85"/><circle cx="85.5" cy="48.5" r="7.85"/><\/g><\/svg>') no-repeat;
+}
+
+#games div h4 {
+    margin: 0;
+    word-break: break-all;
+}
+
+
+/* Tags bar */
+
+#tags {
+    padding: 0;
+    margin: 10px 0;
+}
+
+#tags li {
+    display: inline;
+    background-color: #3aad58;
+    padding: 3px 4px;
+}
+
+#tags li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#tags li a:hover {
+    color: yellow;
+}
