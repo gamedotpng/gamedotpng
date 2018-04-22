@@ -118,7 +118,7 @@ footer {
 
 #games div h4 {
     margin: 0;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 
